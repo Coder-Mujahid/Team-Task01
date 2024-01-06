@@ -39,7 +39,7 @@ body {
     display: flex;
     align-items: center;
     overflow: hidden;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 15px;
     width: 97%;
 
@@ -49,6 +49,7 @@ body {
     margin-right: 15px;
     overflow-x: hidden;
     transition: 0.3s all ease-in;
+    flex-shrink: 0;
 
 }
 
@@ -92,16 +93,20 @@ body {
     .nav-list {
         display: none;
         flex-direction: column;
-        width: 98%;
         text-align: center;
         position: absolute;
-        top: 55px;
+        top: 60px;
         left: 0;
         gap: 0px;
         background: silver;
         max-width: 100%; 
         margin: auto;
-        transition: 0.5s ease-in; 
+        overflow: hidden;
+        max-height: 200px;
+        opacity: 0;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: opacity 0.5s, transform 0.5s;
     }
 
     .nav-list.show {
@@ -109,6 +114,9 @@ body {
         flex-direction: column;
         align-items: center;
         padding: 6px;
+        max-height: 200px;
+        opacity: 1;
+    transform: scaleY(1);
     }
 
     .nav-list li {
