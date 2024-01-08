@@ -16,10 +16,8 @@ body {
 }
 .navbar {
     overflow: hidden;
-    background-color: black;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0px;
     align-items: center;
     width: 70%;
     margin: auto;
@@ -28,12 +26,14 @@ body {
 
 .logo {
     display: flex;
-    background-color: #0056b3;
-    align-items: center;
-    justify-content:center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.logo img{
+
+.logo img {
     width: 160px;
+    padding-bottom: 15px;
 
 }
 
@@ -88,7 +88,6 @@ body {
     }
 
     .navbar {
-        padding: 10px 0px;
         width: 80%;
     }
 
@@ -97,7 +96,7 @@ body {
         flex-direction: column;
         text-align: center;
         position: absolute;
-        top: 58px;
+        top: 55px;
         left: 0;
         gap: 0px;
         margin: auto;
@@ -155,7 +154,7 @@ body {
 .hero {
     background-color: black;
     text-align: center;
-    padding: 40px 0;
+    padding: 60px 0;
 }
 
 .hero-content {
@@ -175,7 +174,7 @@ body {
 }
 
 .hero-text h2 {
-    font-size: 36px;
+    font-size: 56px;
     margin-bottom: 10px;
 }
 
@@ -187,18 +186,24 @@ body {
 }
 
 button {
-    background-color: #007bff;
+    background-color: #fc5204;
     color: white;
-    padding: 10px 20px;
+    padding: 14px 28px;
     border: none;
     cursor: pointer;
     display: inline-block;
     margin-top: 20px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
     transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #cf602c;
+    
 }
 
 img {
@@ -213,8 +218,60 @@ img {
     .hero-text h2 {
         font-size: 30px;
     }
-
+    .hero {
+        padding: 20px 0;
+    }
     .hero-text small {
         font-size: 12px;
     }
+}
+
+
+/* this is search section css */
+.search{
+    background-color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.search .searchContent{
+    max-width: 60%;
+    margin: auto;
+    padding: 0px 80px;
+    text-transform: capitalize;
+
+
+}
+
+.search .searchContent small{
+    margin-bottom: 10px;
+}
+.search .searchContent .search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+
+.search .searchContent .search-container input {
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+
+.search .searchContent .search-container button {
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-container i {
+    font-size: 30px;
 }
