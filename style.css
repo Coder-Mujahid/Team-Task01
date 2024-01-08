@@ -26,9 +26,15 @@ body {
     
 }
 
-
+.logo {
+    display: flex;
+    background-color: #0056b3;
+    align-items: center;
+    justify-content:center;
+}
 .logo img{
     width: 160px;
+
 }
 
 .nav-list {
@@ -83,6 +89,7 @@ body {
 
     .navbar {
         padding: 10px 0px;
+        width: 80%;
     }
 
     .nav-list {
@@ -147,36 +154,36 @@ body {
 /* hero section css */
 .hero {
     background-color: black;
-   
     text-align: center;
+    padding: 40px 0;
 }
 
 .hero-content {
-    min-height: 100vh;
     width: 70%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .hero-text {
     flex: 1;
-    text-align: left;
+    text-align: start;
     color: white;
-    gap: 0px;
+    margin-top: 20px;
 }
 
 .hero-text h2 {
-    font-size: 56px;
-    width: 450px;
-    margin-bottom: 5px;
+    font-size: 36px;
+    margin-bottom: 10px;
 }
 
 .hero-text small {
     font-size: 14px;
     letter-spacing: 1.6px;
+    display: block;
+    margin-bottom: 20px;
 }
 
 button {
@@ -185,7 +192,7 @@ button {
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    display: block;
+    display: inline-block;
     margin-top: 20px;
     transition: background-color 0.3s ease;
 }
@@ -196,7 +203,18 @@ button:hover {
 
 img {
     flex: 1;
-    max-width: 500px;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+    .hero-text small {
+        font-size: 12px;
+    }
 }
