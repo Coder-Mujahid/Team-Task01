@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
     padding: 10px 0px;
     align-items: center;
-    width: 80%;
+    width: 70%;
     margin: auto;
     
 }
@@ -145,10 +145,58 @@ body {
     }
 }
 /* hero section css */
-.content{
-    width: 100%;
-    margin-top: 0px;
+.hero {
+    background-color: black;
+   
+    text-align: center;
+}
+
+.hero-content {
+    min-height: 100vh;
+    width: 70%;
+    margin: auto;
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+    color: white;
+    gap: 0px;
+}
+
+.hero-text h2 {
+    font-size: 56px;
+    width: 450px;
+    margin-bottom: 5px;
+}
+
+.hero-text small {
+    font-size: 14px;
+    letter-spacing: 1.6px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+img {
+    flex: 1;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
 }
