@@ -371,3 +371,107 @@ body {
     }
     
   }
+
+
+  /* this is product card css */
+
+  .card{
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .products {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .products > div {
+    background-color: #fff;
+    box-shadow:  13px 13px 26px #8b8b8b,
+             -13px -13px 26px #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 280px;
+    height: 400px;
+    margin-bottom: 20px;
+  }
+  
+  .products .head {
+    background-color: rgb(52, 185, 226);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    padding: 30px;
+  }
+  
+  .products .price {
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    gap: 10px;
+  }
+
+  .products .price .off{
+    padding: 8px;
+    font-size: 11px;
+    background-color: rgb(33, 156, 194);
+    border-radius: 32px;
+
+  }
+  
+  .products h2 {
+    margin: 0;
+    font-size: 38px;
+  }
+  
+  .products small {
+    display: block;
+    font-size: 12px;
+  }
+  
+  .products ul {
+    list-style: none;
+    padding: 10px 30px;
+    margin: 10px 0;
+  }
+  
+  .products li {
+    padding: 5px;
+    display: flex;
+    gap: 7px;
+    font-size: 14px;
+  }
+  
+  .products li i{
+    color: green;
+    font-size: 20px;
+  }
+  .products button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 50%; /* Set the width to 50% */
+    margin: 0 auto; /* Center the button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .products button:hover {
+    background-color: #0056b3;
+  }
+
+  @media screen and (max-width: 768px){
+    .products h2 {
+        font-size: 32px;
+      }
+  }
