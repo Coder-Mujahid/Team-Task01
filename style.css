@@ -418,13 +418,21 @@ body {
     gap: 10px;
     color: white;
     padding: 30px;
+    position: relative;
   }
   .products .head .populer {
+    position: absolute;
+    top: 20px; 
+    right: 0; 
     background-color: #1B0760;
+    color: white;
+    padding: 5px 13px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 12px;
     text-transform: capitalize;
-    height: auto;
-    width: auto;
-    transform: translate(rotate-90deg);
+    transform: rotate(90deg); 
+    clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0 100%, 0 0);
+
   }
   .products .price {
     display: flex;
@@ -486,7 +494,7 @@ body {
     background: transparent;
     border: 2.5px solid #1B0760;
     display: block; 
-    margin: 0 auto; 
+    margin: 10px auto; 
     cursor: pointer;
     font-weight: 700;
     color: #1B0760;
@@ -502,5 +510,19 @@ body {
   @media screen and (max-width: 768px){
     .products h2 {
         font-size: 32px;
+      }
+      .products .best{
+        height: 400px;
+      }
+      .products button {
+        padding: 14px 24px;
+        
+      }
+      .products .head .populer {
+        top: 34px;
+        font-size: 11px;
+        padding: 3px 13px;
+
+
       }
   }
