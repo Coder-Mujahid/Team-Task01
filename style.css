@@ -558,3 +558,125 @@ body {
         padding: 3px 13px;
       }
   }
+
+
+
+  /* this is searvice css */
+
+  .card-section {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 20px;
+    color: #1B0760;
+}
+.card-section .tittle{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.card-section .tittle h2{
+    font-size: 38px;
+    margin: 10px 0;
+}
+.cards {
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    
+}
+
+
+
+.card-content,
+.card-image {
+    flex: 1;
+}
+
+.card-content {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+
+}
+.card-content aside{
+    width: 40px;
+    height: 40px;
+    padding: 13px;
+    border-radius: 50%;
+    margin: 0px 0px 20px 0px;
+    background-color: #e2e2e2;
+    
+
+}
+
+.card-content aside img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.card-content h2 {
+    color: #1B0760;
+    margin: 0px 0px 20px 0px;
+
+
+}
+
+.card-content p {
+    padding-right: 30px;
+    margin: 0px 0px 20px 0px;
+    color: #1B0760;
+    font-size: 13px;
+    text-align: justify;
+
+}
+
+.card-content a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 0px 10px 0px;
+    transition: color 0.3s;
+}
+
+.card-content a:hover {
+    color: rgb(238, 43, 43);
+}
+.card-image {
+    width: 100%;
+    overflow: hidden; 
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 5px 5px 10px #bcbcbc, -5px -5px 10px #ffffff;
+}
+
+@media screen and (max-width: 768px){
+    .card-section {
+        width: 80%;
+    }
+    .cards {
+        flex-direction: column;
+        padding: 0px 0px;
+    }
+    .card-content {
+        padding: 0px 0px;
+    }
+}
