@@ -409,6 +409,11 @@ body {
   }
   .products .best{
     height: 450px;
+
+  }
+  .products .best .head{
+    background-color: #2584FF;
+
   }
   .products .head {
     flex-basis: 40%;
@@ -446,6 +451,10 @@ body {
     font-size: 11px;
     background-color: #01CDF1;
     border-radius: 32px;
+
+  }
+  .products .best  .price .off{
+    background-color: #126DE4;
 
   }
   
@@ -512,17 +521,40 @@ body {
         font-size: 32px;
       }
       .products .best{
-        height: 400px;
+        height: 450px;
       }
       .products button {
         padding: 14px 24px;
         
       }
       .products .head .populer {
-        top: 34px;
+        top: 56px;
         font-size: 11px;
         padding: 3px 13px;
+      }
 
+      .products .head {
+        padding: 15px 30px ;
+      }
+      .products > div {
+        height: 450px;
+      }
+  }
 
+  @media screen and (max-width: 1110px){
+    .products .best{
+        height: 450px;
+      }
+      .products > div {
+        height: 450px;
+        
+      }
+      .products .head{
+        padding: 15px 30px ;
+      }
+      .products .head .populer {
+        top: 15px;
+        font-size: 11px;
+        padding: 3px 13px;
       }
   }
