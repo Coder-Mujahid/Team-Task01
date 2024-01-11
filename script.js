@@ -11,23 +11,30 @@ function toggleMenu() {
 const cardData = [
     {
         title: "Super Easy to Use",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
         imageSrc: "img/easy.jpg",
         iconSrc: "img/icone/easy.svg",
         learnMoreLink: "#"
     },
     {
-        title: "Super Easy to Use",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        imageSrc: "img/easy.jpg",
-        iconSrc: "img/icone/easy.svg",
+        title: "Simply fast websites",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        imageSrc: "img/fast.jpg",
+        iconSrc: "img/icone/computer.svg",
         learnMoreLink: "#"
     },
     {
-        title: "Super Easy to Use",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        imageSrc: "img/easy.jpg",
-        iconSrc: "img/icone/easy.svg",
+        title: "WordPress made easy",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        imageSrc: "img/wordpress.jpg",
+        iconSrc: "img/icone/satting.svg",
+        learnMoreLink: "#"
+    },
+    {
+        title: "24/7 Expert Support",
+        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        imageSrc: "img/support.jpg",
+        iconSrc: "img/icone/clock.svg",
         learnMoreLink: "#"
     }
     
@@ -86,7 +93,7 @@ function initializeDynamicSections() {
         const cardSection = createCardSection(data);
         container.appendChild(cardSection);
     
-        if (index === 1) {
+        if (index === 1 || index === 3) {
             cardSection.classList.add("secondCard");
         }
     });

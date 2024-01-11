@@ -202,6 +202,12 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .hero {
+    background-color: black;
+    clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0% 100%);
+    text-align: center;
+    padding: 70px 0;
+  }
   .hero-text h2 {
     font-size: 30px;
   }
@@ -576,6 +582,10 @@ body {
 .secondCard {
   flex-direction: row-reverse;
 }
+.secondCard .card-content{
+  padding: 20px 00px 20px 50px;
+
+}
 
 .card-content,
 .card-image {
@@ -583,7 +593,7 @@ body {
 }
 
 .card-content {
-  padding: 20px 50px;
+  padding: 20px 50px 20px 0px;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -610,7 +620,7 @@ body {
 .card-content p {
   padding-right: 30px;
   margin: 0px 0px 20px 0px;
-  font-size: 12px;
+  font-size: 14px;
   color: #8b8b8b;
   text-align: justify;
 }
@@ -640,17 +650,21 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  .secondCard .card-content{
+    padding: 0px;
+  
+  }
   .card-section .tittle h2 {
     font-size: 28px;
     margin: 10px 0;
   }
   .card-section {
     width: 80%;
+
   }
   .cards {
     flex-direction: column;
-    padding: 0px 0px;
-    margin-bottom: 20px;
+    padding: 0px;
   }
   .card-content {
     padding: 0px 0px;
@@ -661,7 +675,132 @@ body {
     font-size: 20px;
   }
   .card-content p {
-    padding-right: 0px;
+    padding: 0px;
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 1110px){
+  .cards {
+    padding: 30px 0px;
+    margin-bottom: 20px;
+
+  }
+  .card-content {
+    padding: 0px 0px;
+  }
+  .card-content p {
+    padding: 0px;
+  }
+}
+
+
+
+/* this id controll pannel css */
+
+.pannel{
+  width: 100%;
+  height: auto;
+  background-color: black;
+  color: white;
+  z-index: -1;
+  padding: 50px 0px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+.pannel .control{
+  width: 70%;
+  margin: auto;
+  margin-bottom: 150px;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+}
+.pannel .control .pannelimg{
+ flex-basis: 55%;
+ width: 100%;
+ height: auto;
+}
+.pannel .control .pannelimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pannel .tittle{
+  text-align: center;
+  font-size: 38px;
+}
+.pannel .control .badge{
+  flex-basis: 45%;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.pannel .control .badge .badgeContent{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.pannel .control .badge .badgeContent img{
+  width: 40px;
+  height: 40px;
+  margin: 0;padding: 0;
+}
+.pannel .control .badge .badgeContent .badgeText h2{
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  margin: 0px 0px 5px 0px;
+  padding: 0;
+}
+.pannel .control .badge .badgeContent .badgeText small{
+  font-size: 14px;
+  font-weight: 500;
+  color: #949494;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 1242px){
+  .pannel .control{
+    display: flex;
+    flex-direction: column;
+  }
+  .pannel .control .pannelimg img{
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+
+
+   }
+   .pannel .control .badge{
+    flex-basis: 45%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 768px){
+
+  .pannel{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+  }
+  .pannel .control .badge{
+    padding: 0;
+  }
+  .pannel .control .pannelimg img{
+    margin-bottom: 20px;
+   }
+  .pannel .control .badge .badgeContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    gap: 20px;
   }
 }
