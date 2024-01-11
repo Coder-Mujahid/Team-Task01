@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
-
 /* header section css */
 
 .header {
@@ -599,9 +597,9 @@ body {
   justify-content: start;
 }
 .card-content aside {
-  width: 30px;
-  height: 30px;
-  padding: 13px;
+  width: 35px;
+  height: 35px;
+  padding: 7px;
   border-radius: 50%;
   margin: 0px 0px 10px 0px;
   background-color: #e2e2e2;
@@ -696,7 +694,7 @@ body {
 
 
 
-/* this id controll pannel css */
+/* this is controll pannel css */
 
 .pannel{
   width: 100%;
@@ -802,5 +800,347 @@ body {
     align-items: center;
     text-align: justify;
     gap: 20px;
+  }
+}
+
+/* this is customer review css */
+.customer{
+  width: 100%;
+  height: auto;
+  background-color: white;
+  color: #1b0760;
+  z-index: -1;
+  padding: 50px 0px;
+}
+.customer .review{
+  position: relative;
+  width: 60%;
+  margin: 50px auto;
+  height: auto;
+  background: white;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+  border-radius: 10px;
+  flex-direction: row;
+  box-shadow:  20px 20px 40px #b8b8b8,
+             -20px -20px 40px #ffffff;
+}
+.customer .review .reviewimg{
+ flex-basis: 40%;
+ width: 100%;
+ max-height: 370px;
+}
+.customer .review .reviewimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.customer h2{
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.customer .text{
+  text-align: center;
+  max-width: 60%;
+  margin: auto;
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.customer .review .badge{
+  flex-basis: 60%;
+  padding: 0;
+
+}
+.customer .review .badge .badgeContent{
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50px;
+  left: 40%; 
+  transform: translateX(-50%);
+  background-color: #fc5204;
+}
+.customer .review .badge .badgeContent img{
+  width: 100%;
+  height: 100%;
+}
+.customer .review .badge .badgeText{
+  position: relative;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.customer .review .badge .badgeText p {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  color: #605a77;
+  text-align: start;
+  margin: 0;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  padding: 0;
+}
+
+.customer .review .badge .badgeText .person{
+  display: flex;
+  gap: 10px;
+  
+}
+.customer .review .badge .badgeText .person img{
+  width: 50px;
+  height: 2px;
+  margin-top: 10px;
+  background-color: #00d9ff;
+}
+.customer .review .badge .badgeText .person .name{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+.customer .review .badge .badgeText .person .name h2{
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  width: 100%;
+  font-weight: 700;
+}
+.customer .review .badge .badgeText .person .name p{
+  margin: 3px 0px;
+  padding: 0;
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 500;
+}
+@media screen and (max-width: 1242px){
+  .customer .review .badge .badgeContent{
+   display: none;
+  }
+  .customer .review .badge .badgeText{
+    padding: 0px;
+  }
+  .customer .review .badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .customer .review .reviewimg{
+    margin-bottom: 20px;
+   }
+}
+
+@media screen and (max-width: 768px){
+  .customer .review{
+    flex-direction: column;
+    margin: 50px auto 80px auto;
+
+  }
+  .customer .review .reviewimg{
+    margin-bottom: 0px;
+   }
+  .customer .review .badge .badgeText{
+    padding:0px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .customer .review .badge .badgeText p{
+   text-align: justify;
+  }
+  .customer .review .badge .badgeText .person{
+    flex-direction: column;
+    
+  }
+  .customer .review .badge .badgeText .person .name h2{
+    text-align: start;
+    width: 100%;
+  }
+  .customer .review .badge .badgeContent{
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+  }
+}
+
+
+
+/* this is footer css */
+
+footer {
+  background-color: black;
+  width: 100%;
+  height: auto;
+}
+
+.footer {
+  width: 70%;
+  position: relative;
+  margin: auto;
+  background-color: transparent;
+  color: #fff; 
+  padding: 30px 20px;
+}
+
+.footer .start {
+  margin: auto;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%); 
+  border-radius: 10px;
+  width: 70%;
+  background-color: #2584ff;
+  color: #fff;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding:  25px;
+}
+
+.footer .start button {
+  width: 35%;
+  height: 45px;
+  background-color: #00d9ff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 32px;
+  font-size: 12px;
+  color: #fff; 
+  font-weight: 700;
+  
+}
+.footer .start p {
+  font-size: 12px;
+  margin-bottom: 10px
+
+  
+}
+.footer .start h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+.footer-part {
+  margin: 150px 0px 0px 0px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around;
+}
+
+.single-footer {
+  flex-basis: calc(20% - 20px); 
+  margin-bottom: 20px;
+  text-align: start;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+}
+.ft {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  text-align: center;
+}
+.ft .Copywrite{
+ font-size: 13px;
+ color: #3a3a3a;
+}
+
+.single-footer h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.single-footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.single-footer li {
+  margin-bottom: 5px;
+  
+}
+
+.single-footer a {
+  font-size: 14px;
+  color: #8b8b8b;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.single-footer a:hover {
+  color: #00bcd4; 
+}
+
+
+@media screen and (max-width: 768px) {
+  .single-footer {
+    flex-basis: calc(25% - 20px); /* Two columns on smaller screens */
+  }
+  .ft {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .footer .start {
+    top: -80px;
+    
+  }
+  .footer .start h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .single-footer {
+    flex-basis: calc(50% - 20px);
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .start {
+    flex-direction: column;
+  }  
+  .footer .start button {
+    width: 100%;
+   
+  }
+  .single-footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .single-footer {
+    flex-basis: 100%; /* Full width on even smaller screens */
+  }
+  .footer .start {
+    top: -100px;
+    
   }
 }
