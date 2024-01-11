@@ -5,10 +5,26 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
 }
+
+:root {
+  --text-blue: #0E1D70;
+  --text-slate: rgba(133, 133, 133, 0.616);
+  --text-orange:#FB5205;
+  --text-orange-hover: #cf602c;
+  --text-white: #ffffff;
+  --text-white-hover: #ffffff;
+  --bg-black: #000000;
+  --bg-cyne: #00D9FF;
+  --bg-cyne-hover: #01cdf1;
+  --bg-sky: #2584FF;
+  --bg-sky-hover: #0c71f5;
+  --bg-green: green;
+
+}
 /* header section css */
 
 .header {
-  background-color: black;
+  background-color: var(--bg-black);
   width: 100%;
 }
 .navbar {
@@ -58,7 +74,7 @@ body {
 }
 
 .nav-list a {
-  color: white;
+  color: var(--text-white);
   text-decoration: none;
   font-size: 16px;
   width: 100%;
@@ -67,7 +83,7 @@ body {
 .burger-menu {
   display: none;
   cursor: pointer;
-  color: white;
+  color: var(--text-white);
   font-size: 30px;
 }
 
@@ -108,7 +124,7 @@ body {
     height: 100%;
     opacity: 1;
     transform: scaleY(1);
-    background: darkcyan;
+    background: var(--bg-sky);
   }
 
   .nav-list li {
@@ -122,11 +138,11 @@ body {
     transition: 0.1s all ease-in-out;
   }
   .nav-list li:hover {
-    background-color: rgb(61, 182, 182);
+    background-color: var(--bg-sky-hover);
     transform: scale(1.1);
   }
   .nav-list li a {
-    color: black;
+    color: var(--text-white);
     width: 100%;
     height: 100%;
   }
@@ -138,10 +154,13 @@ body {
 }
 /* hero section css */
 .hero {
-  background-color: black;
+  background-color: var(--bg-black);
   clip-path: polygon(0 0%, 100% 0%, 100% 80%, 0% 100%);
   text-align: center;
-  padding: 70px 0;
+  padding: 0px 0px 100px 0;
+  width: 100%;
+  height: auto;
+
 }
 
 .hero-content {
@@ -151,12 +170,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .hero-text {
   flex: 1;
   text-align: start;
-  color: white;
+  color: var(--text-white);
   margin-top: 20px;
 }
 
@@ -172,8 +192,8 @@ body {
 }
 
 .hero .hero-content .hero-text button {
-  background-color: #fc5204;
-  color: white;
+  background-color: var(--text-orange);
+  color: var(--text-white);
   padding: 14px 28px;
   border: none;
   cursor: pointer;
@@ -188,20 +208,20 @@ body {
 }
 
 .hero .hero-content .hero-text button:hover {
-  background-color: #cf602c;
+  background-color: var(--text-orange-hover);
 }
 
 .hero .hero-content img {
   flex: 1;
   width: 100%;
-  max-width: 400px;
+  max-width: 500px;
   height: auto;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 768px) {
   .hero {
-    background-color: black;
+    background-color: var(--bg-black);
     clip-path: polygon(0 0%, 100% 0%, 100% 90%, 0% 100%);
     text-align: center;
     padding: 70px 0;
@@ -219,15 +239,15 @@ body {
 
 /* this is search section css */
 .search {
-  background-color: white;
+  background-color: var(--text-white);
   text-align: center;
   text-transform: capitalize;
-  color: #0e1d70;
+  color: var(--text-blue);
   margin: 20px;
 }
 
 .search .searchContent {
-  max-width: 60%;
+  max-width: 70%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -244,7 +264,7 @@ body {
 .search .searchContent small {
   margin: 0;
   padding: 0;
-  color: #3a3a3a;
+  color: var(--text-slate);
   margin-bottom: 30px;
 }
 
@@ -281,12 +301,12 @@ body {
 
 .search .searchContent .search-container button {
   position: relative;
-  background-color: #fc5204;
+  background-color: var(--text-orange);
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--text-white);
   padding: 14px 32px;
   border-radius: 30px;
   text-transform: uppercase;
@@ -297,7 +317,7 @@ body {
 }
 
 .search .searchContent .search-container button:hover {
-  background-color: #cf602c;
+  background-color: var(--text-orange-hover);
 }
 
 .search .searchContent .search-container i {
@@ -324,15 +344,15 @@ body {
 }
 
 .search .searchContent .domain li:hover {
-  background-color: #00d9ff;
-  color: white;
+  background-color: var(--bg-cyne);
+  color: var(--text-white-hover);
 }
 
 .search .searchContent .domain a {
   text-decoration: none;
   font-weight: bold;
   cursor: pointer;
-  color: #0e1d70;
+  color: var(--text-blue);
   background: none;
 }
 .search .searchContent .domain a:hover {
@@ -380,7 +400,7 @@ body {
 }
 
 .products > div {
-  background-color: #fff;
+  background-color: var(--text-white);
   box-shadow: 13px 13px 26px #8b8b8b, -13px -13px 26px #ffffff;
   border-radius: 6px;
   overflow: hidden;
@@ -399,15 +419,15 @@ body {
   height: 450px;
 }
 .products .best .head {
-  background-color: #2584ff;
+  background-color: var(--bg-sky);
 }
 .products .head {
   flex-basis: 40%;
-  background-color: #00d9ff;
+  background-color: var(--bg-cyne);
   display: flex;
   flex-direction: column;
   gap: 10px;
-  color: white;
+  color: var(--text-white);
   padding: 30px;
   position: relative;
 }
@@ -415,8 +435,8 @@ body {
   position: absolute;
   top: 20px;
   right: 0;
-  background-color: #1b0760;
-  color: white;
+  background-color: var(--text-blue);
+  color: var();
   padding: 5px 13px;
   border-radius: 0px 5px 5px 0px;
   font-size: 12px;
@@ -434,11 +454,11 @@ body {
 .products .price .off {
   padding: 8px;
   font-size: 11px;
-  background-color: #01cdf1;
+  background-color: var(--bg-cyne-hover);
   border-radius: 32px;
 }
 .products .best .price .off {
-  background-color: #126de4;
+  background-color: var(--bg-sky-hover);
 }
 
 .products h2 {
@@ -456,7 +476,7 @@ body {
   list-style: none;
   padding: 10px 30px;
   margin: 10px 0;
-  color: #1b0760;
+  color: var(--text-blue);
   font-weight: 700;
 }
 
@@ -468,7 +488,7 @@ body {
 }
 
 .products li i {
-  color: green;
+  color: var(--bg-green);
   font-size: 20px;
 }
 .products .button {
@@ -484,19 +504,19 @@ body {
   width: 50%;
   border-radius: 32px;
   background: transparent;
-  border: 2.5px solid #1b0760;
+  border: 2.5px solid var(--text-blue);
   display: block;
   margin: 10px auto;
   cursor: pointer;
   font-weight: 700;
-  color: #1b0760;
+  color: var(--text-blue);
   font-family: "Montserrat", sans-serif;
   transition: background-color 0.3s ease;
 }
 
 .products button:hover {
-  background-color: #1b0760;
-  color: white;
+  background-color: var(--text-blue);
+  color: var(--text-white);
 }
 
 @media screen and (max-width: 768px) {
@@ -550,7 +570,7 @@ body {
   justify-content: center;
   align-items: stretch;
   padding: 20px;
-  color: #1b0760;
+  color: var(--text-blue);
 }
 .card-section .tittle {
   margin-bottom: 30px;
@@ -563,7 +583,7 @@ body {
 }
 .card-section .tittle small {
   font-size: 14px;
-  color: #8b8b8b;
+  color: var(--text-slate);
 }
 .cards {
   margin: 10px;
@@ -611,7 +631,7 @@ body {
 }
 
 .card-content h2 {
-  color: #1b0760;
+  color: var(--text-blue);
   margin: 0px 0px 20px 0px;
 }
 
@@ -619,12 +639,12 @@ body {
   padding-right: 30px;
   margin: 0px 0px 20px 0px;
   font-size: 14px;
-  color: #8b8b8b;
+  color: var(--text-slate);
   text-align: justify;
 }
 
 .card-content a {
-  color: #fc5204;
+  color: var(--text-orange);
   text-decoration: none;
   font-weight: bold;
   margin: 0px 0px 10px 0px;
@@ -632,7 +652,7 @@ body {
 }
 
 .card-content a:hover {
-  color: #fc4a04;
+  color: var(--text-orange-hover);
 }
 .card-image {
   width: 100%;
@@ -699,8 +719,8 @@ body {
 .pannel{
   width: 100%;
   height: auto;
-  background-color: black;
-  color: white;
+  background-color: var(--bg-black);
+  color: var(--text-white);
   z-index: -1;
   padding: 50px 0px;
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
@@ -750,14 +770,14 @@ body {
 .pannel .control .badge .badgeContent .badgeText h2{
   font-size: 16px;
   font-weight: 700;
-  color: white;
+  color: var(--text-white);
   margin: 0px 0px 5px 0px;
   padding: 0;
 }
 .pannel .control .badge .badgeContent .badgeText small{
   font-size: 14px;
   font-weight: 500;
-  color: #949494;
+  color: var(--text-slate);
   margin: 0;
   padding: 0;
 }
@@ -807,8 +827,8 @@ body {
 .customer{
   width: 100%;
   height: auto;
-  background-color: white;
-  color: #1b0760;
+  background-color: var(--text-white);
+  color:var(--text-blue);
   z-index: -1;
   padding: 50px 0px;
 }
@@ -817,7 +837,7 @@ body {
   width: 60%;
   margin: 50px auto;
   height: auto;
-  background: white;
+  background: var(--text-white);
   display: flex;
   padding: 30px;
   gap: 30px;
@@ -849,6 +869,7 @@ body {
   max-width: 60%;
   margin: auto;
   font-size: 14px;
+  color: var(--text-slate);
   letter-spacing: 1px;
   margin-bottom: 20px;
 }
@@ -866,7 +887,7 @@ body {
   top: 50px;
   left: 40%; 
   transform: translateX(-50%);
-  background-color: #fc5204;
+  background-color: var(--text-orange);
 }
 .customer .review .badge .badgeContent img{
   width: 100%;
@@ -883,7 +904,7 @@ body {
   font-size: 18px;
   font-style: italic;
   font-weight: 500;
-  color: #605a77;
+  color: var(--text-slate);
   text-align: start;
   margin: 0;
   line-height: 1.5;
@@ -900,7 +921,7 @@ body {
   width: 50px;
   height: 2px;
   margin-top: 10px;
-  background-color: #00d9ff;
+  background-color: var(--bg-cyne);
 }
 .customer .review .badge .badgeText .person .name{
   display: flex;
@@ -980,7 +1001,7 @@ body {
 /* this is footer css */
 
 footer {
-  background-color: black;
+  background-color: var(--bg-black);
   width: 100%;
   height: auto;
 }
@@ -990,7 +1011,7 @@ footer {
   position: relative;
   margin: auto;
   background-color: transparent;
-  color: #fff; 
+  color: var(--text-white); 
   padding: 30px 20px;
 }
 
@@ -1003,7 +1024,7 @@ footer {
   border-radius: 10px;
   width: 70%;
   background-color: #2584ff;
-  color: #fff;
+  color: var(--text-white);
   display: flex;
   gap: 10px;
   justify-content: center;
@@ -1014,14 +1035,19 @@ footer {
 .footer .start button {
   width: 35%;
   height: 45px;
-  background-color: #00d9ff;
+  background-color: var(--bg-cyne);
   border: none;
   font-family: 'Montserrat', sans-serif;
   border-radius: 32px;
   font-size: 12px;
-  color: #fff; 
+  color: var(--text-white); 
   font-weight: 700;
+  transition: background-color 0.2s ease;
   
+}
+.footer .start button:hover{
+  background-color: var(--bg-cyne-hover);
+
 }
 .footer .start p {
   font-size: 12px;
@@ -1060,7 +1086,7 @@ footer {
 }
 .ft .Copywrite{
  font-size: 13px;
- color: #3a3a3a;
+ color: var(--text-slate);
 }
 
 .single-footer h3 {
@@ -1081,13 +1107,13 @@ footer {
 
 .single-footer a {
   font-size: 14px;
-  color: #8b8b8b;
+  color: var(--text-slate);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .single-footer a:hover {
-  color: #00bcd4; 
+  color: var(--bg-cyne); 
 }
 
 
