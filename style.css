@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap");
 
 body {
   margin: 0;
@@ -45,7 +45,6 @@ body {
   justify-content: flex-end;
   gap: 15px;
   width: 97%;
-  
 }
 
 .nav-list li {
@@ -216,467 +215,453 @@ body {
 
 /* this is search section css */
 .search {
-    background-color: white;
-    text-align: center;
-    text-transform: capitalize;
-    color: #0e1d70;
-    margin: 20px;
-  }
-  
-  .search .searchContent {
-    max-width: 60%; 
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  background-color: white;
+  text-align: center;
+  text-transform: capitalize;
+  color: #0e1d70;
+  margin: 20px;
+}
 
-  .search .searchContent h2{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    font-size: 36px;
-    margin-bottom: 20px;
+.search .searchContent {
+  max-width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  }
-  .search .searchContent small{
-    margin: 0;
-    padding: 0;
-    color: #3a3a3a;
-    margin-bottom: 30px;
+.search .searchContent h2 {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.search .searchContent small {
+  margin: 0;
+  padding: 0;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+}
 
+.search .searchContent .search-container {
+  display: flex;
+  min-width: 60%;
+  padding: 2px;
+  margin-bottom: 20px;
+  border-radius: 30px;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(145deg, #ffffff, #ffffff);
+  box-shadow: 11px 11px 22px #8b8b8b, -11px -11px 22px #ffffff;
+}
 
+.search .searchContent .search-container input {
+  border: none;
+  display: flex;
+  outline: none;
+  align-items: center;
+  background: transparent;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 16px 20px;
+  justify-content: center;
+  font-size: 14px;
+}
 
-  }
-  
-  .search .searchContent .search-container {
-    display: flex;
-    min-width: 60%; 
-    padding: 2px;
-    margin-bottom: 20px;
-    border-radius: 30px;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
-    box-shadow:  11px 11px 22px #8b8b8b,
-             -11px -11px 22px #ffffff;
-  }
-
-  
-  .search .searchContent .search-container input {
-    border: none;
-    display: flex;
-    outline: none;
-    align-items: center;
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 16px 20px; 
-    justify-content: center;
-    font-size: 14px; 
-    
-  }
-
-  .search .searchContent .search-container input::placeholder{
+.search .searchContent .search-container input::placeholder {
   font-family: "Montserrat", sans-serif;
+}
+
+.search .searchContent .search-container button {
+  position: relative;
+  background-color: #fc5204;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.search .searchContent .search-container button:hover {
+  background-color: #cf602c;
+}
+
+.search .searchContent .search-container i {
+  font-size: 20px;
+  font-weight: 300;
+}
+.search .searchContent .domain {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  gap: 15px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.search .searchContent .domain li {
+  background: transparent;
+  padding: 5px 5px;
+  border-radius: 32px;
+  transition: background-color 0.3s ease;
+}
+
+.search .searchContent .domain li:hover {
+  background-color: #00d9ff;
+  color: white;
+}
+
+.search .searchContent .domain a {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0e1d70;
+  background: none;
+}
+.search .searchContent .domain a:hover {
+  text-decoration: underline;
+  background: none;
+}
+
+@media screen and (max-width: 768px) {
+  .search .searchContent .search-container {
+    min-width: 100%;
+    margin-bottom: 0px;
   }
-  
   .search .searchContent .search-container button {
-    position: relative; 
-    background-color: #fc5204;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    color: white;
-    padding: 14px 32px;
-    border-radius: 30px;
-    text-transform: uppercase;
-    font-size: 10px; 
-    font-weight: 700;
-    letter-spacing: 1px;
-    transition: background-color 0.3s ease;
+    padding: 14px;
   }
-
-  .search .searchContent .search-container button:hover{
-    background-color: #cf602c;
+  .search .searchContent .search-container span {
+    display: none;
   }
-
-  
-  .search .searchContent .search-container i {
-    font-size: 20px;
-    font-weight: 300;
+  .search .searchContent {
+    max-width: 80%;
   }
   .search .searchContent .domain {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 0; 
-    gap: 15px;
-    font-size: 13px;
-    font-weight: 700;
+    gap: 5px;
   }
+}
 
-  .search .searchContent .domain li{
-    background: transparent;
-    padding: 5px 5px;
-    border-radius: 32px;
-    transition: background-color 0.3s ease;
+/* this is product card css */
 
-  }
+.card {
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 80px auto;
+  align-items: center;
+  justify-content: center;
+}
 
-  .search .searchContent .domain li:hover{
-    background-color: #00D9FF;
-    color: white;
-  }
-  
+.products {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
 
-  
-  .search .searchContent .domain a {
-    text-decoration: none;
-    font-weight: bold;
-    cursor: pointer;
-    color: #0e1d70;
-    background: none;
-  }
-  .search .searchContent .domain a:hover {
-    text-decoration: underline;
-    background: none;
+.products > div {
+  background-color: #fff;
+  box-shadow: 13px 13px 26px #8b8b8b, -13px -13px 26px #ffffff;
+  border-radius: 6px;
+  overflow: hidden;
+  width: 280px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+.products > div:hover {
+  transform: scale3d(1.01, 1.01, 1.01);
+}
+.products .best {
+  height: 450px;
+}
+.products .best .head {
+  background-color: #2584ff;
+}
+.products .head {
+  flex-basis: 40%;
+  background-color: #00d9ff;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  padding: 30px;
+  position: relative;
+}
+.products .head .populer {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-color: #1b0760;
+  color: white;
+  padding: 5px 13px;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 12px;
+  text-transform: capitalize;
+  transform: rotate(90deg);
+  clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0 100%, 0 0);
+}
+.products .price {
+  display: flex;
+  align-items: baseline;
+  justify-content: start;
+  gap: 10px;
+}
 
-  }
-  
-  @media screen and (max-width: 768px){
-    .search .searchContent .search-container{
-    min-width: 100%; 
-    margin-bottom: 0px;
+.products .price .off {
+  padding: 8px;
+  font-size: 11px;
+  background-color: #01cdf1;
+  border-radius: 32px;
+}
+.products .best .price .off {
+  background-color: #126de4;
+}
 
-    
-    }
-    .search .searchContent .search-container button{
-        padding: 14px;
+.products h2 {
+  margin: 0;
+  font-size: 38px;
+}
 
-    }
-    .search .searchContent .search-container span{
-        display: none;
-    }
-    .search .searchContent {
-        max-width: 80%; 
+.products small {
+  display: block;
+  font-size: 12px;
+}
 
-    }
-    .search .searchContent .domain{
-        gap: 5px;
-    }
-    
-  }
+.products ul {
+  flex-basis: 40%;
+  list-style: none;
+  padding: 10px 30px;
+  margin: 10px 0;
+  color: #1b0760;
+  font-weight: 700;
+}
 
+.products li {
+  padding: 5px;
+  display: flex;
+  gap: 7px;
+  font-size: 14px;
+}
 
-  /* this is product card css */
+.products li i {
+  color: green;
+  font-size: 20px;
+}
+.products .button {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-basis: 20%;
+  margin-bottom: 10px;
+}
+.products button {
+  border: none;
+  padding: 14px 32px;
+  width: 50%;
+  border-radius: 32px;
+  background: transparent;
+  border: 2.5px solid #1b0760;
+  display: block;
+  margin: 10px auto;
+  cursor: pointer;
+  font-weight: 700;
+  color: #1b0760;
+  font-family: "Montserrat", sans-serif;
+  transition: background-color 0.3s ease;
+}
 
-  .card{
-    width: 80%;
-    height: auto;
-    display: flex;
-    margin: 80px auto;
-    align-items: center;
-    justify-content: center;
-  }
+.products button:hover {
+  background-color: #1b0760;
+  color: white;
+}
 
-  .products {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .products > div {
-    background-color: #fff;
-    box-shadow:  13px 13px 26px #8b8b8b,
-             -13px -13px 26px #ffffff;
-    border-radius: 6px;
-    overflow: hidden;
-    width: 280px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-    margin-bottom: 20px;
-  }
-  .products .best{
-    height: 450px;
-
-  }
-  .products .best .head{
-    background-color: #2584FF;
-
-  }
-  .products .head {
-    flex-basis: 40%;
-    background-color: #00D9FF;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    color: white;
-    padding: 30px;
-    position: relative;
-  }
-  .products .head .populer {
-    position: absolute;
-    top: 20px; 
-    right: 0; 
-    background-color: #1B0760;
-    color: white;
-    padding: 5px 13px;
-    border-radius: 0px 5px 5px 0px;
-    font-size: 12px;
-    text-transform: capitalize;
-    transform: rotate(90deg); 
-    clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0 100%, 0 0);
-
-  }
-  .products .price {
-    display: flex;
-    align-items: baseline;
-    justify-content: start;
-    gap: 10px;
-  }
-
-  .products .price .off{
-    padding: 8px;
-    font-size: 11px;
-    background-color: #01CDF1;
-    border-radius: 32px;
-
-  }
-  .products .best  .price .off{
-    background-color: #126DE4;
-
-  }
-  
+@media screen and (max-width: 768px) {
   .products h2 {
-    margin: 0;
-    font-size: 38px;
+    font-size: 32px;
   }
-  
-  .products small {
-    display: block;
-    font-size: 12px;
-  }
-  
-  .products ul {
-    flex-basis: 40%;
-    list-style: none;
-    padding: 10px 30px;
-    margin: 10px 0;
-    color: #1B0760;
-    font-weight: 700;
-  }
-  
-  .products li {
-    padding: 5px;
-    display: flex;
-    gap: 7px;
-    font-size: 14px;
-  }
-  
-  .products li i{
-    color: green;
-    font-size: 20px;
-  }
-  .products .button{
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    flex-basis: 20%;
-    margin-bottom: 10px;
+  .products .best {
+    height: 450px;
   }
   .products button {
-    border: none;
-    padding: 14px 32px;
-    width: 50%; 
-    border-radius: 32px;
-    background: transparent;
-    border: 2.5px solid #1B0760;
-    display: block; 
-    margin: 10px auto; 
-    cursor: pointer;
-    font-weight: 700;
-    color: #1B0760;
-    font-family: 'Montserrat', sans-serif;
-    transition: background-color 0.3s ease;
+    padding: 14px 24px;
   }
-  
-  .products button:hover {
-    background-color: #1B0760;
-    color: white;
+  .products .head .populer {
+    top: 56px;
+    font-size: 11px;
+    padding: 3px 13px;
   }
 
-  @media screen and (max-width: 768px){
-    .products h2 {
-        font-size: 32px;
-      }
-      .products .best{
-        height: 450px;
-      }
-      .products button {
-        padding: 14px 24px;
-        
-      }
-      .products .head .populer {
-        top: 56px;
-        font-size: 11px;
-        padding: 3px 13px;
-      }
-
-      .products .head {
-        padding: 15px 30px ;
-      }
-      .products > div {
-        height: 450px;
-      }
+  .products .head {
+    padding: 15px 30px;
   }
-
-  @media screen and (max-width: 1110px){
-    .products .best{
-        height: 450px;
-      }
-      .products > div {
-        height: 450px;
-        
-      }
-      .products .head{
-        padding: 15px 30px ;
-      }
-      .products .head .populer {
-        top: 15px;
-        font-size: 11px;
-        padding: 3px 13px;
-      }
+  .products > div {
+    height: 450px;
   }
-
-
-
-  /* this is searvice css */
-
-  .card-section {
-    display: flex;
-    width: 70%;
-    margin: auto;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: stretch;
-    padding: 20px;
-    color: #1B0760;
-}
-.card-section .tittle{
-    margin-bottom: 30px;
-    text-align: center;
 }
 
-.card-section .tittle h2{
-    font-size: 38px;
-    margin: 10px 0;
+@media screen and (max-width: 1110px) {
+  .products .best {
+    height: 450px;
+  }
+  .products > div {
+    height: 450px;
+  }
+  .products .head {
+    padding: 15px 30px;
+  }
+  .products .head .populer {
+    top: 15px;
+    font-size: 11px;
+    padding: 3px 13px;
+  }
+}
+
+/* this is searvice css */
+
+.card-section {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 20px;
+  color: #1b0760;
+}
+.card-section .tittle {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.card-section .tittle h2 {
+  font-size: 38px;
+  margin: 10px 0;
+}
+.card-section .tittle small {
+  font-size: 14px;
+  color: #8b8b8b;
 }
 .cards {
-    margin: 10px;
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 20px;
-    padding: 50px 20px;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s;
-    
+  margin: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 20px;
+  padding: 50px 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s;
 }
-
-
+.secondCard {
+  flex-direction: row-reverse;
+}
 
 .card-content,
 .card-image {
-    flex: 1;
+  flex: 1;
 }
 
 .card-content {
-    padding: 20px 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-
-
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
-.card-content aside{
-    width: 40px;
-    height: 40px;
-    padding: 13px;
-    border-radius: 50%;
-    margin: 0px 0px 20px 0px;
-    background-color: #e2e2e2;
-    
-
+.card-content aside {
+  width: 30px;
+  height: 30px;
+  padding: 13px;
+  border-radius: 50%;
+  margin: 0px 0px 10px 0px;
+  background-color: #e2e2e2;
 }
 
-.card-content aside img{
-    width: 100%;
-    height: 100%;
-    
+.card-content aside img {
+  width: 100%;
+  height: 100%;
 }
 
 .card-content h2 {
-    color: #1B0760;
-    margin: 0px 0px 20px 0px;
-
-
+  color: #1b0760;
+  margin: 0px 0px 20px 0px;
 }
 
 .card-content p {
-    padding-right: 30px;
-    margin: 0px 0px 20px 0px;
-    color: #1B0760;
-    font-size: 13px;
-    text-align: justify;
-
+  padding-right: 30px;
+  margin: 0px 0px 20px 0px;
+  font-size: 12px;
+  color: #8b8b8b;
+  text-align: justify;
 }
 
 .card-content a {
-    color: red;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 0px 0px 10px 0px;
-    transition: color 0.3s;
+  color: #fc5204;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+  transition: color 0.3s;
 }
 
 .card-content a:hover {
-    color: rgb(238, 43, 43);
+  color: #fc4a04;
 }
 .card-image {
-    width: 100%;
-    overflow: hidden; 
+  width: 100%;
+  overflow: hidden;
 }
 
 .card-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0 0 10px 10px;
-    box-shadow: 5px 5px 10px #bcbcbc, -5px -5px 10px #ffffff;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 5px 5px 10px #bcbcbc, -5px -5px 10px #ffffff;
 }
 
-@media screen and (max-width: 768px){
-    .card-section {
-        width: 80%;
-    }
-    .cards {
-        flex-direction: column;
-        padding: 0px 0px;
-    }
-    .card-content {
-        padding: 0px 0px;
-    }
+@media screen and (max-width: 768px) {
+  .card-section .tittle h2 {
+    font-size: 28px;
+    margin: 10px 0;
+  }
+  .card-section {
+    width: 80%;
+  }
+  .cards {
+    flex-direction: column;
+    padding: 0px 0px;
+    margin-bottom: 20px;
+  }
+  .card-content {
+    padding: 0px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .card-content h2 {
+    font-size: 20px;
+  }
+  .card-content p {
+    padding-right: 0px;
+    text-align: center;
+  }
 }
