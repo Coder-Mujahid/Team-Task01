@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --text-blue: #0E1D70;
+  --text-slate: rgba(133, 133, 133, 0.616);
+  --text-orange:#FB5205;
+  --text-orange-hover: #cf602c;
+  --text-white: #ffffff;
+  --text-white-hover: #ffffff;
+  --bg-black: #000000;
+  --bg-cyne: #00D9FF;
+  --bg-cyne-hover: #01cdf1;
+  --bg-sky: #2584FF;
+  --bg-sky-hover: #0c71f5;
+  --bg-green: green;
+
+}
+/* this is controll pannel css */
+
+.pannel{
+    width: 100%;
+    height: auto;
+    background-color: var(--bg-black);
+    color: var(--text-white);
+    z-index: -1;
+    padding: 50px 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+  }
+  .pannel .control{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 150px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .pannel .control .pannelimg{
+   flex-basis: 55%;
+   width: 100%;
+   height: auto;
+  }
+  .pannel .control .pannelimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .pannel .tittle{
+    text-align: center;
+    font-size: 38px;
+  }
+  .pannel .control .badge{
+    flex-basis: 45%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .pannel .control .badge .badgeContent{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .pannel .control .badge .badgeContent img{
+    width: 40px;
+    height: 40px;
+    margin: 0;padding: 0;
+  }
+  .pannel .control .badge .badgeContent .badgeText h2{
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-white);
+    margin: 0px 0px 5px 0px;
+    padding: 0;
+  }
+  .pannel .control .badge .badgeContent .badgeText small{
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-slate);
+    margin: 0;
+    padding: 0;
+  }
+  @media screen and (max-width: 1242px){
+    .pannel .control{
+      display: flex;
+      flex-direction: column;
+    }
+    .pannel .control .pannelimg img{
+      width: 100%;
+      height: auto;
+      object-fit: fill;
+  
+  
+     }
+     .pannel .control .badge{
+      flex-basis: 45%;
+      margin: 0;
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+  
+    .pannel{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 95%);
+    }
+    .pannel .control .badge{
+      padding: 0;
+    }
+    .pannel .control .pannelimg img{
+      margin-bottom: 20px;
+     }
+    .pannel .control .badge .badgeContent{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      gap: 20px;
+    }
+  }

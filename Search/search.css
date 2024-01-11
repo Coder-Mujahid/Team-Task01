@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --text-blue: #0E1D70;
+  --text-slate: rgba(133, 133, 133, 0.616);
+  --text-orange:#FB5205;
+  --text-orange-hover: #cf602c;
+  --text-white: #ffffff;
+  --text-white-hover: #ffffff;
+  --bg-black: #000000;
+  --bg-cyne: #00D9FF;
+  --bg-cyne-hover: #01cdf1;
+  --bg-sky: #2584FF;
+  --bg-sky-hover: #0c71f5;
+  --bg-green: green;
+
+}
+
+/* this is search section css */
+.search {
+    background-color: var(--text-white);
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--text-blue);
+    margin: 20px;
+  }
+  
+  .search .searchContent {
+    max-width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .search .searchContent h2 {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  .search .searchContent small {
+    margin: 0;
+    padding: 0;
+    color: var(--text-slate);
+    margin-bottom: 30px;
+  }
+  
+  .search .searchContent .search-container {
+    display: flex;
+    min-width: 60%;
+    padding: 2px;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    box-shadow: 11px 11px 22px #8b8b8b, -11px -11px 22px #ffffff;
+  }
+  
+  .search .searchContent .search-container input {
+    border: none;
+    display: flex;
+    outline: none;
+    align-items: center;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 16px 20px;
+    justify-content: center;
+    font-size: 14px;
+  }
+  
+  .search .searchContent .search-container input::placeholder {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .search .searchContent .search-container button {
+    position: relative;
+    background-color: var(--text-orange);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--text-white);
+    padding: 14px 32px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search .searchContent .search-container button:hover {
+    background-color: var(--text-orange-hover);
+  }
+  
+  .search .searchContent .search-container i {
+    font-size: 20px;
+    font-weight: 300;
+  }
+  .search .searchContent .domain {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    gap: 15px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  
+  .search .searchContent .domain li {
+    background: transparent;
+    padding: 5px 5px;
+    border-radius: 32px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search .searchContent .domain li:hover {
+    background-color: var(--bg-cyne);
+    color: var(--text-white-hover);
+  }
+  
+  .search .searchContent .domain a {
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--text-blue);
+    background: none;
+  }
+  .search .searchContent .domain a:hover {
+    text-decoration: underline;
+    background: none;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .search .searchContent .search-container {
+      min-width: 100%;
+      margin-bottom: 0px;
+    }
+    .search .searchContent .search-container button {
+      padding: 14px;
+    }
+    .search .searchContent .search-container span {
+      display: none;
+    }
+    .search .searchContent {
+      max-width: 80%;
+    }
+    .search .searchContent .domain {
+      gap: 5px;
+    }
+  }

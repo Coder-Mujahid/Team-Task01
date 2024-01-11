@@ -966,6 +966,13 @@ body {
     margin: 50px auto 80px auto;
 
   }
+  .customer h2{
+    font-size: 24px;
+  }
+ .customer .text{
+    max-width: 100%;
+    text-align: center;
+  }
   .customer .review .reviewimg{
     margin-bottom: 0px;
    }

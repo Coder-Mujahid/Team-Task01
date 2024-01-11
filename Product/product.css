@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+  --text-blue: #0E1D70;
+  --text-slate: rgba(133, 133, 133, 0.616);
+  --text-orange:#FB5205;
+  --text-orange-hover: #cf602c;
+  --text-white: #ffffff;
+  --text-white-hover: #ffffff;
+  --bg-black: #000000;
+  --bg-cyne: #00D9FF;
+  --bg-cyne-hover: #01cdf1;
+  --bg-sky: #2584FF;
+  --bg-sky-hover: #0c71f5;
+  --bg-green: green;
+
+}
+/* this is product card css */
+
+.card {
+    width: 80%;
+    height: auto;
+    display: flex;
+    margin: 80px auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .products {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .products > div {
+    background-color: var(--text-white);
+    box-shadow: 13px 13px 26px #8b8b8b, -13px -13px 26px #ffffff;
+    border-radius: 6px;
+    overflow: hidden;
+    width: 280px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+  .products > div:hover {
+    transform: scale3d(1.01, 1.01, 1.01);
+  }
+  .products .best {
+    height: 450px;
+  }
+  .products .best .head {
+    background-color: var(--bg-sky);
+  }
+  .products .head {
+    flex-basis: 40%;
+    background-color: var(--bg-cyne);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--text-white);
+    padding: 30px;
+    position: relative;
+  }
+  .products .head .populer {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    background-color: var(--text-blue);
+    color: var();
+    padding: 5px 13px;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 12px;
+    text-transform: capitalize;
+    transform: rotate(90deg);
+    clip-path: polygon(100% 0, 85% 50%, 100% 100%, 0 100%, 0 0);
+  }
+  .products .price {
+    display: flex;
+    align-items: baseline;
+    justify-content: start;
+    gap: 10px;
+  }
+  
+  .products .price .off {
+    padding: 8px;
+    font-size: 11px;
+    background-color: var(--bg-cyne-hover);
+    border-radius: 32px;
+  }
+  .products .best .price .off {
+    background-color: var(--bg-sky-hover);
+  }
+  
+  .products h2 {
+    margin: 0;
+    font-size: 38px;
+  }
+  
+  .products small {
+    display: block;
+    font-size: 12px;
+  }
+  
+  .products ul {
+    flex-basis: 40%;
+    list-style: none;
+    padding: 10px 30px;
+    margin: 10px 0;
+    color: var(--text-blue);
+    font-weight: 700;
+  }
+  
+  .products li {
+    padding: 5px;
+    display: flex;
+    gap: 7px;
+    font-size: 14px;
+  }
+  
+  .products li i {
+    color: var(--bg-green);
+    font-size: 20px;
+  }
+  .products .button {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-basis: 20%;
+    margin-bottom: 10px;
+  }
+  .products button {
+    border: none;
+    padding: 14px 32px;
+    width: 50%;
+    border-radius: 32px;
+    background: transparent;
+    border: 2.5px solid var(--text-blue);
+    display: block;
+    margin: 10px auto;
+    cursor: pointer;
+    font-weight: 700;
+    color: var(--text-blue);
+    font-family: "Montserrat", sans-serif;
+    transition: background-color 0.3s ease;
+  }
+  
+  .products button:hover {
+    background-color: var(--text-blue);
+    color: var(--text-white);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .products h2 {
+      font-size: 32px;
+    }
+    .products .best {
+      height: 450px;
+    }
+    .products button {
+      padding: 14px 24px;
+    }
+    .products .head .populer {
+      top: 56px;
+      font-size: 11px;
+      padding: 3px 13px;
+    }
+  
+    .products .head {
+      padding: 15px 30px;
+    }
+    .products > div {
+      height: 450px;
+    }
+  }
+  
+  @media screen and (max-width: 1110px) {
+    .products .best {
+      height: 450px;
+    }
+    .products > div {
+      height: 450px;
+    }
+    .products .head {
+      padding: 15px 30px;
+    }
+    .products .head .populer {
+      top: 15px;
+      font-size: 11px;
+      padding: 3px 13px;
+    }
+  }
+  
