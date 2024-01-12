@@ -168,7 +168,6 @@ const badgeData = [
     badgeList.appendChild(badgeContent);
   });
 
-
  // Sample data for the footer -------------------------------------------------------
  const footerData = {
     company: [
