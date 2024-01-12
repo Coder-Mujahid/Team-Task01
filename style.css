@@ -377,6 +377,9 @@ body {
   .search .searchContent .domain {
     gap: 5px;
   }
+  .search .searchContent h2 {
+    font-size: 24px;
+  }
 }
 
 /* this is product card css */
@@ -820,6 +823,10 @@ body {
     align-items: center;
     text-align: justify;
     gap: 20px;
+  }
+  .pannel .tittle{
+    text-align: center;
+    font-size: 24px;
   }
 }
 
