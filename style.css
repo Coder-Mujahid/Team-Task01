@@ -1091,7 +1091,7 @@ footer {
   justify-content: start;
   text-align: center;
 }
-.ft .Copywrite{
+.Copywrite{
  font-size: 13px;
  color: var(--text-slate);
 }
@@ -1126,7 +1126,7 @@ footer {
 
 @media screen and (max-width: 768px) {
   .single-footer {
-    flex-basis: calc(25% - 20px); /* Two columns on smaller screens */
+    flex-basis: calc(25% - 20px);
   }
   .ft {
     display: flex;
