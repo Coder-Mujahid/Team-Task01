@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
-
 body {
   margin: 0;
   padding: 0;
@@ -7,202 +6,252 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 :root {
-  --text-blue: #0E1D70;
-  --text-slate: rgba(133, 133, 133, 0.616);
-  --text-orange: #FB5205;
-  --text-orange-hover: #cf602c;
-  --text-white: #ffffff;
-  --text-white-hover: #ffffff;
-  --bg-black: #000000;
-  --bg-cyne: #00D9FF;
-  --bg-cyne-hover: #01cdf1;
-  --bg-sky: #2584FF;
-  --bg-sky-hover: #0c71f5;
-  --bg-green: green;
+    --text-blue: #0E1D70;
+    --text-slate: rgba(133, 133, 133, 0.616);
+    --text-orange: #FB5205;
+    --text-orange-hover: #cf602c;
+    --text-white: #ffffff;
+    --text-white-hover: #ffffff;
+    --bg-black: #000000;
+    --bg-cyne: #00D9FF;
+    --bg-cyne-hover: #01cdf1;
+    --bg-sky: #2584FF;
+    --bg-sky-hover: #0c
 }
 
-.customer{
-  width: 100%;
-  height: auto;
-  background-color: var(--text-white);
-  color:var(--text-blue);
-  z-index: -1;
-  padding: 50px 0px;
-}
-.customer .review{
-  position: relative;
-  width: 60%;
-  margin: 50px auto;
-  height: auto;
-  background: var(--text-white);
-  display: flex;
-  padding: 30px;
-  gap: 30px;
-  border-radius: 10px;
-  flex-direction: row;
-  box-shadow:  20px 20px 40px #b8b8b8,
-             -20px -20px 40px #ffffff;
-}
-.customer .review .reviewimg{
- flex-basis: 40%;
- width: 100%;
- max-height: 370px;
-}
-.customer .review .reviewimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.customer h2{
-  width: 60%;
-  margin: auto;
-  text-align: center;
-  font-size: 32px;
-  margin-bottom: 10px;
-}
-.customer .text{
-  text-align: center;
-  max-width: 60%;
-  margin: auto;
-  font-size: 14px;
-  color: var(--text-slate);
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-}
-.customer .review .badge{
-  flex-basis: 60%;
-  padding: 0;
-
-}
-.customer .review .badge .badgeContent{
-  width: 50px;
-  height: 50px;
-  padding: 13px;
-  border-radius: 50%;
-  position: absolute;
-  top: 50px;
-  left: 40%; 
-  transform: translateX(-50%);
-  background-color: var(--text-orange);
-}
-.customer .review .badge .badgeContent img{
-  width: 100%;
-  height: 100%;
-}
-.customer .review .badge .badgeText{
-  position: relative;
-  padding: 30px 40px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-.customer .review .badge .badgeText p {
-  font-size: 18px;
-  font-style: italic;
-  font-weight: 500;
-  color: var(--text-slate);
-  text-align: start;
-  margin: 0;
-  line-height: 1.5;
-  letter-spacing: 0px;
-  padding: 0;
-}
-
-.customer .review .badge .badgeText .person{
-  display: flex;
-  gap: 10px;
-  
-}
-.customer .review .badge .badgeText .person img{
-  width: 50px;
-  height: 2px;
-  margin-top: 10px;
-  background-color: var(--bg-cyne);
-}
-.customer .review .badge .badgeText .person .name{
-  display: flex;
-  align-items: start;
-  flex-direction: column;
-}
-.customer .review .badge .badgeText .person .name h2{
-  margin: 0;
-  padding: 0;
-  font-size: 20px;
-  width: 100%;
-  font-weight: 700;
-}
-.customer .review .badge .badgeText .person .name p{
-  margin: 3px 0px;
-  padding: 0;
-  font-style: normal;
-  font-size: 13px;
-  font-weight: 500;
-}
-@media screen and (max-width: 1242px){
-  .customer .review .badge .badgeContent{
-   display: none;
-  }
-  .customer .review .badge .badgeText{
-    padding: 0px;
-  }
-  .customer .review .badge {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-  }
-  .customer .review .reviewimg{
-    margin-bottom: 20px;
-   }
-}
-
-@media screen and (max-width: 768px){
-  .customer .review{
-    flex-direction: column;
-    margin: 50px auto 80px auto;
-    gap: 0;
-
-  }
-  .customer h2{
-    font-size: 24px;
-  }
- .customer .text{
-    max-width: 100%;
-    text-align: center;
-  }
-  .customer .review .reviewimg{
-    margin-bottom: 0px;
-   }
-  .customer .review .badge .badgeText{
-    padding:0px;
-    flex-direction: column;
-    gap: 0px;
-  }
-  .customer .review .badge .badgeText p{
-   text-align: justify;
-   font-size: 12px;
-  }
-  .customer .review .badge .badgeText .person{
-    flex-direction: column;
-    
-  }
-  .customer .review .badge .badgeText .person .name h2{
-    text-align: start;
+.customer {
     width: 100%;
+    background-color: var(--text-white);
+    margin-bottom: 50px;
+
+}
+.customer .tittle{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    font-size: 38px;
+    color: var(--text-blue);
+}
+.customer .subtittle{
+    width: 70%;
+    color: var(--text-slate);
     font-size: 14px;
+    padding: 0;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.swiper {
+    width: 60%;
+    height: 100%;
+    margin: auto;
+    padding: 0px;
+    background-color: transparent;
+    overflow: hidden;
+    box-shadow: 20px 20px 40px #b8b8b8, -20px -20px 40px #ffffff;
+    border-radius: 10px;
   }
-  .customer .review .badge .badgeText .person .name p{
-    font-size: 12px;
+
+  .swiper-slide {
+    width: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 30px;
+    gap: 30px;
+    flex-direction: row;
+    background-color: transparent;
   }
-  .customer .review .badge .badgeContent{
+
+   .reviewimg {
+    flex-basis: 40%;
+    width: 100%;
+    height: 370px;
+  }
+  
+   .reviewimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+   .badge {
+    flex-basis: 60%;
+    padding: 0;
+    margin: 0;
+  }
+  
+   .badge .badgeContent {
     width: 50px;
     height: 50px;
     padding: 13px;
     border-radius: 50%;
     position: absolute;
-    top: 30%;
+    top: 50px;
     left: 40%;
+    transform: translateX(-50%);
+    background-color: var(--text-orange);
   }
-}
+  
+   .badge .badgeContent img {
+    width: 100%;
+    height: 100%;
+  }
+  
+   .badge .badgeText {
+    position: relative;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+   .badge .badgeText p {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    color: var(--text-slate);
+    text-align: start;
+    margin: 0;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    padding: 0;
+  }
+  
+   .badge .badgeText .person {
+    display: flex;
+    gap: 10px;
+  }
+  
+   .badge .badgeText .person img {
+    width: 50px;
+    height: 2px;
+    margin-top: 10px;
+    background-color: var(--bg-cyne);
+  }
+  
+   .badge .badgeText .person .name {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  
+   .badge .badgeText .person .name h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: #0E1D70;
+    width: 100%;
+    font-weight: 700;
+  }
+  
+   .badge .badgeText .person .name p {
+    margin: 3px 0px;
+    padding: 0;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  @media screen and (max-width: 1242px) {
+     .badge .badgeContent {
+      display: none;
+    }
+  
+     .badge .badgeText {
+      padding: 0px;
+    }
+  
+     .badge {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+     .reviewimg {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .swiper {
+        width: 80%;
+    }
+    .swiper-slide {
+      flex-direction: column;
+      padding: 15px;
+    }
+     .customer .tittle {
+      font-size: 20px;
+    }
+    .swiper-button-next{
+        display: none;
+    }
+    .swiper-button-prev{
+        display: none;
+    }
+     .customer .subtittle {
+      max-width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+     .reviewimg {
+      margin-bottom: 0px;
+    }
+  
+     .badge .badgeText {
+      padding: 0px;
+      flex-direction: column;
+      position: relative;
+      gap: 0px;
+    }
+  
+     .reviewimg {
+      flex-basis: 40%;
+      position: relative;
+      width: 100%;
+      max-height: 100%;
+    }
+  
+     .badge .badgeText p {
+      text-align: justify;
+      font-size: 10px;
+    }
+  
+    .badge .badgeText .person {
+      flex-direction: column;
+    }
+    .badge .badgeText .person img{
+        width: 30px;
+        height: 2px;
+    }
+     .badge .badgeText .person .name h2 {
+      text-align: start;
+      width: 100%;
+      font-size: 12px;
+    }
+  
+     .badge .badgeText .person .name p {
+      text-align: start;
+      width: 100%;
+      font-size: 10px;
+    }
+  
+     .badge .badgeContent {
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+      border-radius: 50%;
+      position: absolute;
+      top: 30%;
+      left: 40%;
+    }
+  } 
