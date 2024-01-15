@@ -167,6 +167,14 @@ const badgeData = [
   
     badgeList.appendChild(badgeContent);
   });
+// customer review slider js ---------------------------------------------------------
+
+// var swiper = new Swiper(".mySwiper", {
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   })
 
  // Sample data for the footer -------------------------------------------------------
  const footerData = {
