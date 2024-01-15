@@ -971,6 +971,7 @@ body {
   .customer .review{
     flex-direction: column;
     margin: 50px auto 80px auto;
+    gap: 0;
 
   }
   .customer h2{
@@ -986,10 +987,11 @@ body {
   .customer .review .badge .badgeText{
     padding:0px;
     flex-direction: column;
-    gap: 20px;
+    gap: 0px;
   }
   .customer .review .badge .badgeText p{
    text-align: justify;
+   font-size: 12px;
   }
   .customer .review .badge .badgeText .person{
     flex-direction: column;
@@ -998,6 +1000,10 @@ body {
   .customer .review .badge .badgeText .person .name h2{
     text-align: start;
     width: 100%;
+    font-size: 14px;
+  }
+  .customer .review .badge .badgeText .person .name p{
+    font-size: 12px;
   }
   .customer .review .badge .badgeContent{
     width: 50px;
