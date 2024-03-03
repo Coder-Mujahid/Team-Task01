@@ -17,7 +17,6 @@ This repository contains tasks and assignments for our team. Feel free to contri
 
 - Task management
 - Collaboration
-- ...
 
 ## Getting Started
 
